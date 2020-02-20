@@ -5,11 +5,11 @@ To Practice with these files, you need 5 Host *  EL [7|8]
 named as the following 
 
 
-workstation.lab.example.com
-servera.lab.example.com
-serverb.lab.example.com
-serverc.lab.example.com
-serverd.lab.example.com
+1) workstation.lab.example.com
+2) servera.lab.example.com
+3) serverb.lab.example.com
+4) serverc.lab.example.com
+5) serverd.lab.example.com
 
                                                   
 You can use /etc/hosts in each machine to name them ( need not to have DNS ) 
