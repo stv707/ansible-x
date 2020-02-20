@@ -7,7 +7,9 @@ named as the following
 
                             /-servera.lab.example.com 
                            /-serverb.lab.example.com
-workstation.lab.example.com 
+                          /
+workstation.lab.example.com
+                          \
                            \-serverc.lab.example.com 
                             \-serverd.lab.example.com 
                             
