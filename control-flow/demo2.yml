@@ -1,0 +1,17 @@
+---
+- name: check users on remote hosts  
+  hosts: servera.lab.example.com 
+  gather_facts: no 
+
+
+  tasks: 
+    - name: Using loop to run thru many list 
+      user:
+        name: "{{ item.name }}" 
+        state: present
+        groups: "{{ item.groups }}" 
+      loop: 
+        - name: root
+          groups: root
+        - name: student
+          groups: wheel 

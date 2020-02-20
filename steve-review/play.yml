@@ -1,0 +1,9 @@
+---
+- name: Create user called batman in Server
+  hosts: servera.lab.example.com
+  tasks: 
+    - name: user batman exist in servera 
+      user: 
+        name: batman
+        uid: 5000
+        state: present 

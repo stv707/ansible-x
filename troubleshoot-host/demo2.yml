@@ -1,0 +1,11 @@
+---
+- name: Testing task in check mode 
+  hosts: all 
+  tasks: 
+    - name: Task always runs in check mode 
+      shell: uname -a 
+      check_mode: no
+      register: out 
+
+    - debug:
+        var: out.stdout

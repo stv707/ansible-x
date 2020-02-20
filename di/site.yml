@@ -1,0 +1,31 @@
+---
+- name: Install and Start Apache HTTPD 
+  hosts: web 
+  tasks: 
+        - name: Httpd Package is Present 
+          yum:
+            name: httpd
+            state: present 
+
+        - name: correct index.html is present 
+          copy:
+            src: /tmp/index.html
+            dest: /var/www/html/index.html 
+
+        - name: httpd is started 
+          service: 
+            name: httpd 
+            state: started 
+            enabled: true
+
+        - name: Add http to Firewalls  
+          firewalld:
+            service: http
+            permanent: yes
+            zone: public
+            state: enabled
+
+        - name: Restart service firewalld
+          service:
+              name: firewalld
+              state: restarted

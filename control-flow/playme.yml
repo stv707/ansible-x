@@ -1,0 +1,11 @@
+---
+- name: Testing 
+  hosts: servera.lab.example.com 
+  tasks:
+     - name: return release to registered var
+       shell: cat /etc/redhat-release
+       register: rel
+
+     - debug:
+         msg:   "{{ rel.stdout_lines }}"  
+       when: rel.stdout_lines != ""   

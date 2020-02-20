@@ -1,0 +1,22 @@
+---
+- hosts: serverb.lab.example.com
+  vars_files: 
+    - vars/users.yml
+
+
+
+  tasks: 
+   - name: calling variable for servera
+     debug:
+       msg: "{{ package }}" 
+  
+   - name: calling variable for servera
+     debug:
+       msg: "{{ fire }}" 
+      
+
+   - name: Calling file variable 
+     debug:
+       msg: calling file variable {{ myfile }} 
+
+...

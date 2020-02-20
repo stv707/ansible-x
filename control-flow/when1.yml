@@ -1,0 +1,12 @@
+---
+- name: Print MSG when file exists
+  hosts:  database_dev
+  tasks: 
+    - stat:
+        path: /etc/kdump.conf 
+      register: myresult 
+
+
+    - debug: 
+        msg: "kdump file exists" 
+      when: myresult.stat.exists 

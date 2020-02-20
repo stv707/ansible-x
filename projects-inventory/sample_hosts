@@ -1,0 +1,44 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+172.25.254.254	classroom.example.com classroom
+172.25.254.254	content.example.com content
+172.25.254.254	materials.example.com materials
+### rht-vm-hosts file listing the entries to be appended to /etc/hosts
+#
+172.25.250.9    workstation.lab.example.com      workstation
+172.25.250.10   servera.lab.example.com servera
+172.25.250.11   serverb.lab.example.com serverb
+172.25.250.12   serverc.lab.example.com serverc
+172.25.250.13   serverd.lab.example.com serverd
+172.25.250.254	bastion.lab.example.com bastion
+192.168.10.1 db1.lab.example.com db1
+192.168.10.2 db2.lab.example.com db2
+192.168.10.3 db3.lab.example.com db3
+192.168.10.4 db4.lab.example.com db4
+192.168.10.5 db5.lab.example.com db5
+192.168.10.6 db6.lab.example.com db6
+192.168.10.7 db7.lab.example.com db7
+192.168.10.8 db8.lab.example.com db8
+192.168.10.9 db9.lab.example.com db9
+192.168.10.10 db10.lab.example.com db10
+192.168.20.1 app1.lab.example.com app1
+192.168.20.2 app2.lab.example.com app2
+192.168.20.3 app3.lab.example.com app3
+192.168.20.4 app4.lab.example.com app4
+192.168.20.5 app5.lab.example.com app5
+192.168.20.6 app6.lab.example.com app6
+192.168.20.7 app7.lab.example.com app7
+192.168.20.8 app8.lab.example.com app8
+192.168.20.9 app9.lab.example.com app9
+192.168.20.10 app10.lab.example.com app10
+192.168.30.1 vm1.lab.example.com vm1
+192.168.30.2 vm2.lab.example.com vm2
+192.168.30.3 vm3.lab.example.com vm3
+192.168.30.4 vm4.lab.example.com vm4
+192.168.30.5 vm5.lab.example.com vm5
+192.168.30.6 vm6.lab.example.com vm6
+192.168.30.7 vm7.lab.example.com vm7
+192.168.30.8 vm8.lab.example.com vm8
+192.168.30.9 vm9.lab.example.com vm9
+192.168.30.10 vm10.lab.example.com vm10

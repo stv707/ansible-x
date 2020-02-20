@@ -1,0 +1,18 @@
+---
+- name: Testing Debug Module
+  hosts: servera.lab.example.com 
+  tasks:
+    - name: Debug 1 
+      debug:
+        msg: "This is a TEST MSG for Debug 1" 
+
+    - name: Debug 2 
+      debug:
+        msg: "System servera has uuid {{ ansible_product_uuid }}" 
+
+    - name: Debug 3 with Shell command 
+      command: /usr/bin/uptime
+      register: shell_result
+      
+    - debug: 
+        var:  shell_result.stdout   

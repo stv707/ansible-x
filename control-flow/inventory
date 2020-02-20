@@ -1,0 +1,9 @@
+[database_dev]
+servera.lab.example.com
+
+[database_prod]
+serverb.lab.example.com
+
+[database_hosts:children]
+database_dev
+database_prod

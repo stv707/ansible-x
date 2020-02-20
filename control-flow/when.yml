@@ -1,0 +1,12 @@
+---
+- name: Print MSG when file exists
+  hosts: servera.lab.example.com
+  tasks: 
+    - stat:
+        path: /etc/kdump.conf 
+      register: myresult 
+
+
+    - debug: 
+        var: myresult
+

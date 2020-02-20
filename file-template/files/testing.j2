@@ -1,0 +1,16 @@
+TO JSON Example
+
+## ansible_facts['default_ipv4'] | to_json 
+{{ ansible_facts['default_ipv4'] | to_json }}
+
+
+TO NICE JSON Example
+##  ansible_facts['default_ipv4'] | to_nice_json
+{{ ansible_facts['default_ipv4'] | to_nice_json }}
+
+
+FROM_JSON EXAMPLE  
+{% set temp = '{"temperature": 22, "unit": "\u00b0C"}'|from_json %} 
+## set temp = '{"temperature": 22, "unit": "\u00b0C"}'|from_json 
+The temperature is {{ temp.temperature }}{{ temp.unit }} 
+

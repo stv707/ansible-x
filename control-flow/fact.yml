@@ -1,0 +1,8 @@
+---
+- hosts: all 
+  tasks: 
+  - name: print various Ansible Facts
+    debug:
+      msg:
+          - using ansible_facts {{ ansible_facts.fqdn }} is {{ ansible_facts.default_ipv4.address }} 
+          - using local facts value for user1 is= {{ ansible_facts['ansible_local']['custom']['users']['user1'] }}

@@ -1,0 +1,14 @@
+---
+- name : Host_Vars Example 
+  hosts: 
+    - servera.lab.example.com
+    - serverb.lab.example.com
+
+  tasks: 
+  - name: Calling variable from host_var package 
+    debug: 
+      msg: "{{ package }}"
+
+  - name: Calling another variable from host_var fire 
+    debug: 
+      msg: "{{ fire }}"

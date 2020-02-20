@@ -1,0 +1,29 @@
+---
+- name: Deploy MariaDB System to RHEL 8.0 only
+  hosts: all
+  vars:
+    mariadb_packages:
+      - mariadb-server
+      - python3-PyMySQL
+
+  tasks:
+
+    - name: Verify RHEL release 
+      shell: cat /etc/redhat-release
+      register: rel_out
+
+    - name: MariaDB packages are installed
+      yum:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ mariadb_packages }}"
+      when: rel_out.stdout == "Red Hat Enterprise Linux release 8.0 (Ootpa)"  
+      notify: 
+        - Start MariaDB service
+
+  handlers: 
+    - name: Start MariaDB service
+      service:
+        name: mariadb
+        state: started
+        enabled: true

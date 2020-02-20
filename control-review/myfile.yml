@@ -1,0 +1,15 @@
+---
+- name: Add a line to a text file
+  hosts: all
+  tasks: 
+    - name: Create the mydb config 
+      file:
+        path: /etc/mydb.conf
+        state: touch
+
+
+    - name: using lineinfile module
+      lineinfile:
+        path: /etc/mydb.conf 
+        line: 'This is a lineinfile test' 
+        state: present 

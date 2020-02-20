@@ -1,0 +1,14 @@
+---
+- name: Testing Old Loop 
+  hosts: servera.lab.example.com
+  vars: 
+    data: 
+      - u0
+      - u1
+      - u3
+
+  tasks: 
+    - name: "with_items" 
+      debug:
+        msg: "{{ item }}"
+      with_items: "{{ data }}" 

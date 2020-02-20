@@ -1,0 +1,14 @@
+---
+- name: Verify the checksum of a file
+  hosts: all 
+
+  tasks: 
+  - name: perform MD5 checksum
+    stat:
+     path: /etc/passwd
+     checksum_algorithm: md5
+    register: result
+  
+  - name: Show the MD5 Checksum 
+    debug: 
+         msg: "The checksum of the file is {{ result.stat.checksum }}"

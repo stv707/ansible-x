@@ -1,0 +1,26 @@
+---
+# tasks file for Apache Setup 
+
+- name: Install and enable httpd
+  yum:
+    name: 
+       - httpd
+       - firewalld
+    state: latest
+
+- name: Push Index.html from template 
+  template: 
+     src : index.j2
+     dest: /var/www/html/index.html 
+     owner: root
+     group: root
+     mode: 0644
+  notify: 
+    - restart HTTP
+
+- name: Enable Firewall port http
+  firewalld:
+     service: http
+     permanent: true
+     state: enabled 
+     immediate: yes 

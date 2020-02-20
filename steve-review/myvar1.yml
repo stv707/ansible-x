@@ -1,0 +1,14 @@
+---
+- hosts: servera.lab.example.com
+  vars:
+    users:
+      bjones:
+        fname: Bob
+        lname: Jones
+        hdir: /home/bjones
+
+
+  tasks:
+  - name: Calling fname variable 
+    debug: 
+      msg: user first name is {{ users.bjones.fname }} 

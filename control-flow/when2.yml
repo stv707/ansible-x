@@ -1,0 +1,12 @@
+---
+- name: Print MSG when file exists
+  hosts: all 
+  tasks: 
+    - stat:
+        path: /var/kdump.conf 
+      register: myresult 
+
+
+    - debug: 
+        msg: "kdump file not there" 
+      when: myresult.stat.exists == false 

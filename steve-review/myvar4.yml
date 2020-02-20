@@ -1,0 +1,13 @@
+---
+- hosts: web1
+
+  tasks: 
+   - name: calling variable
+     debug:
+       msg: "{{ package }}" 
+  
+   - name: calling variable
+     debug:
+       msg: "{{ fire }}" 
+
+...

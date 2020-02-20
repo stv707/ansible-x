@@ -1,0 +1,21 @@
+extra_packages: mysql-server
+configure_database_path: /etc/
+db_service: mysqld
+
+user_list:
+  - name: John Davis
+    username: jdavis
+    role: dbadmin
+  - name: Jennifer Smith
+    username: jsmith
+    role: dbuser
+  - name: Sarah Johnson
+    username: sjohnson
+    role: webadmin
+  - name: Matt Jones
+    username: mjones
+    role: webdev
+
+host_permission_groups:
+  - dbadmin
+  - dbuser

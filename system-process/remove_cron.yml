@@ -1,0 +1,12 @@
+---
+- name: Remove Cron Job
+  hosts: all
+  become: hosts 
+
+  tasks:
+    - name: Cron Job removal 
+      cron:
+        name: Add date and time for Job
+        user: devops
+        cron_file: add-date-time
+        state: absent 

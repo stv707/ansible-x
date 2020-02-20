@@ -1,0 +1,32 @@
+---
+- name: MariaDB server is running
+  hosts: all
+  vars:
+    mariadb_packages:
+      - mariadb-server
+      - python3-PyMySQL
+    release_name:
+      -Fedora 
+    sysfqdn: 
+      - servera.lab.example.com 
+
+  tasks:
+    - name: MariaDB packages are installed
+      yum:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ mariadb_packages }}"
+      when:
+        - ansible_distribution in release_name
+        - ansible_fqdn in sysfqdn 
+      notify: 
+        - Start MariaDB service
+  handlers: 
+    - name: Start MariaDB service
+      service:
+        name: mariadb
+        state: started
+        enabled: true
+
+
+

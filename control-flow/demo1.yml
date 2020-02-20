@@ -1,0 +1,15 @@
+---
+- name: Cron,SSH and Chronyd is running 
+  hosts: all
+  gather_facts: no 
+
+
+  tasks: 
+    - name: Using loop to run thru many list 
+      service:
+        name: "{{ item }}" 
+        state: started 
+      loop: 
+        - crond
+        - chronyd
+        - sshd

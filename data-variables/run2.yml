@@ -1,0 +1,16 @@
+- hosts: all
+  vars:
+    linux:
+      - redhat
+      - ubuntu
+      - debian
+      - centos
+      - fedora
+      
+  tasks:
+  - name: Ansible List variable Example
+    debug:
+      msg: 
+        - "{{ linux [2] }}"
+        - "{{ linux [1] }}"
+        - "{{ linux [0] }}"

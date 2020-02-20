@@ -1,0 +1,13 @@
+---
+- hosts: serverb.lab.example.com
+
+  tasks: 
+   - name: calling variable for servera
+     debug:
+       msg: "{{ package }}" 
+  
+   - name: calling variable for servera
+     debug:
+       msg: "{{ fire }}" 
+
+...

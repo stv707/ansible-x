@@ -1,0 +1,8 @@
+---
+- hosts: all 
+  tasks:
+    - name : Print Ansible Fact (specific )
+      debug:
+        msg: |
+          the user name in {{ ansible_facts.fqdn }} is 
+          {{ ansible_facts.ansible_local.custom.users.user1 }} 

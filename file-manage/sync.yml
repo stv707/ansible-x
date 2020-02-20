@@ -1,0 +1,10 @@
+---
+- name: synchronize local file to remote files
+  hosts: all 
+  
+  tasks: 
+  - name: Sync all data/ dir to remote system
+    synchronize:
+        src: ./data
+        dest: /home/devops/
+        archive: yes 

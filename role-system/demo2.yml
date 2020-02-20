@@ -1,0 +1,7 @@
+---
+- name: Calling myrole role to deploy webserver
+  hosts: servera.lab.example.com 
+
+
+  roles:
+    - myrole 

@@ -1,0 +1,2 @@
+package: testing_group_vars
+fire: testing2_group_vars 

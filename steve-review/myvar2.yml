@@ -1,0 +1,13 @@
+---
+- hosts: servera.lab.example.com
+  vars:
+    unix: 
+      - ibm
+      - mac
+      - solaris
+      - hpux
+
+  tasks:
+  - name: Calling variable by array
+    debug: 
+      msg: value for array 1 is {{ unix[1] }} 

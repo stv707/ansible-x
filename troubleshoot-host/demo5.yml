@@ -1,0 +1,22 @@
+---
+- name: Using fail module
+  hosts: all 
+  tasks: 
+    - name: Check if /etc/kdump.conf file exists 
+      stat:
+        path: /etc/kdump.confXX
+      register: lock 
+
+    - name: Perform assertion on file 
+      assert:
+        that:
+          - not lock.stat.exists 
+        success_msg: "File kdump.conf is not there" 
+        fail_msg: "File kdump is there, we are failing here" 
+
+    - name: Run some command 
+      command: uptime
+      register: out
+
+    - debug:
+        var: out.stdout

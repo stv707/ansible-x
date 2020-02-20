@@ -1,0 +1,6 @@
+---
+- name: Use Apache Role playbook 
+  hosts: webservers
+
+  roles:
+    - apache

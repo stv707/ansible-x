@@ -1,0 +1,19 @@
+---
+- name: Install MYSQL and VERIFY 
+  hosts: servera.lab.example.com 
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - role: steve.mysql
+      mysql_databases:
+        - name: my_db
+          encoding: utf8
+          collation: utf8_bin
+        - name: my_db
+          state: dump
+          target: /tmp/my_db.mysql
+      mysql_users:
+        - name: bob
+          password: mypass
+          priv: "my_db.*:ALL"

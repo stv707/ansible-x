@@ -1,0 +1,30 @@
+---
+- name: Setup Web(Apache) on all host and push default index.hml file 
+  hosts: web_prod
+  remote_user: devops 
+  become: true
+  tasks: 
+    - name: Install and enable httpd
+      yum:
+          name: 
+            - httpd
+            - firewalld
+          state: latest
+
+    - name: Push Index.html from template 
+      template: 
+          src : files/index.j2
+          dest: /var/www/html/index.html 
+          owner: root
+          group: root
+          mode: 0644
+    - name: Enable Firewall port http
+      firewalld:
+           service: http
+           permanent: true
+           state: enabled 
+           immediate: yes 
+    - name: restart HTTP 
+      service: 
+          name: httpd
+          state: restarted 
