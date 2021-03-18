@@ -62,10 +62,12 @@ Configure the managed host with the proper configuration:
    1. httpd package is installed , enabled on boot and started
    2. The firewall is enabled and running with a rule that allow access to http port 
    3. A template file called index.html.j2 exist and is used to create default index.html page with following output 
-   ``sh 
+
+   ```sh 
    Welcome to HOSTNAME on IPADDRESS 
    SYSTEM memory is MEMORY
-   ``sh 
+   ``` 
+   
    >note: the HOSTNAME is the FQDN of the managed host and IPADDRESS is IP address of the managed host and MEMORY is the memory amount in Mb of the managed hosts
    4. Create a playbook called init_webstar.yml that uses role webstar that runs on all blackmesa-east managed system 
 
