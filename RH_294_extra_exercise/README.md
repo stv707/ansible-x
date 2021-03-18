@@ -1,43 +1,57 @@
-## ansible-x 294 Assets
+## ansible-x 294 Extra Exercise 
 
-### ansible exercise files
+### Configure Ansible Env
 
-### requirement 
+Install/Configure Ansible on Workstation and server machine with following settings:
++ On workstation machine create a user called neo with password ABcd!@# and su to user neo 
 
-To Practice, you need 5 host/vm with the following settings: 
++ install ansible 2.9 on workstation 
 
-  | System | HostName | Spec | Min Env | 
-  | --- | --- | --- |--- | 
-  | RHEL 8.x  | workstation.lab.example.com | VM | 2gb RAM with Python 3+ ans Ansible 2.9 | 
-  | RHEL 8.x  | servera.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
-  | RHEL 8.x  | serverb.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
-  | RHEL 8.x  | serverc.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
-  | RHEL 8.x  | serverd.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
++ create a static inventory file called /home/neo/ansible/inventory so that:
+   1. servera is a member of dev host group
+   2. serverb is a member of test host group 
+   3. serverc and serverd is a member of prod group
+   4. the prod group is a member of webservers host group 
+   5. the dev and test group is member of the devtest group 
+   6. servera and serverb is a member of blackmesa-east group 
+   7. serverc and serverd is a member of blackmesa-north group 
+   8. both blackmesa-east and blackmesa-north belongs to blackmesa group 
 
- >**Note** : You can use /etc/hosts in each machine to name them to resolve hostname in ansible ( need not to have DNS )
++ Create a configuration file called /home/neo/ansible/ansible.cfg which meets the following settings
+   1. the host inventory points to /home/neo/ansible/inventory 
+   2. the location of roles used in playbooks by user neo includes /home/neo/ansible/roles and /usr/share/ansible/roles 
+   3. Maximum amount of fork is set to 2 for all playbook execution 
+   4. default remote user is neo 
+   5. remote user neo should able to perform privilege escalation on remote systems 
 
- >**Note** : You need to configure Auto Login via SSH from Workstation to All Servers [hint: ssh_keygen / ssh_copy_id]
+> Note: beyond this, your workstation machine will act as the ansible control node
 
- >**Note** : You need to configure NON Password based sudo escalation on each servers to facilitate the ansible execution [hint: /etc/sudoers.d/]
- 
- >**Note** : You can modify the requirement to meet your personal machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
+### Configure remote systems 
+Configure the managed host with the proper configuration: 
++ Create a playbook called init_user.yml that will create user neo with password ABcd!@# on all server machines 
 
- >**Note** : if your personal machine do not meet the requirement, then , you may deploy the VM on AWS or Azure with trial account which should last for 30days ( because of the VM spec RAM is LOW )
++ Create a playbook called init_sudo.yml that will configure user neo to escalate to user root with no password prompt on all server machine 
 
-### navigation 
++ write ansible ad-hoc command that will setup yum repo to point to workstation and save it in a shell script called yum_repo_setup.sh , upon execution of the shell script, it should go to all server machines and create 2 yum repo file that points to workstation machine's RHEL Yum repo and Ansible Yum repo
 
-This repo contains 2 sub folders:
-   | Folder Name | Purpose |
-   | --- | --- |
-   | RH_294_exercise | All Practice lab Solution for RH294 Training | 
-   | RH_294_extra_exercise | Extra Practice with no Solution | 
+### Install Packages
++ Create a playbook called init_pack.yml that will:
+   1. installs php , vsftpd and  mariadb packages on host test and prod group
+   2. installs Development Tools package group on host in the dev group
+   3. update all packages to latest version on hosts in the dev group 
 
-### usage
+### Use System Role 
++ Install the RHEL system roles package and create a playbook called time.yml that will perform the following:
+   1. Runs on all Managed hosts
+   2. Uses the timesync role 
+   3. Configure the role to use chrony as the default NTP provider 
+   4. Configure the role to use the time server 2.asia.pool.ntp.org
 
-- This Repo is strictly for Student whom have attended RH294 only 
-- This repo will be marked private on Final Day of Training Delivery, Please clone / download an offline copy ASAP. 
-- DO NOT share ANY of the content of this repo on public domain. 
-- You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
-- the lab prefix command will not work on NON training machine (you don't need them because the folders RH_294_exercise contains all the practice that the lab prefix creates )
+### Configure Disk Automation 
++ Create a playbook called init_disk.yml that runs on all managed host and performs the following: 
+   1. Creates a Volume group named bigdata that uses the additional disk with 5GB size ( DO NOT use O.S disk )
+   2. Creates 2 logical volume called dbdata and webdata with 1GB size each 
+   3. Formats the logical volume dbdata with ext4 filesystem and webdata with xfs filesystem 
+   4. Persistently mounts webdata to /web 
+   5. DO NOT mount logical volume dbdata in any way 
 
-Thank You : @banditbroz 
