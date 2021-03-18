@@ -1,18 +1,21 @@
 ## ansible-x 294 Assets
 
-### ansible example exercise files
+### ansible exercise files
 
 ### requirement 
 
-To Practice with these files, you need 5 host named as the following: 
+To Practice with these files, you need 5 host/vm with the following settings: 
 
- + workstation.lab.example.com
- + servera.lab.example.com
- + serverb.lab.example.com
- + serverc.lab.example.com
- + serverd.lab.example.com
+  | System | HostName | Spec | Min Env | 
+  | --- | --- | --- |--- | 
+  | RHEL 8.x  | workstation.lab.example.com | VM | 2gb RAM with Python 3+ ans Ansible 2.9 | 
+  | RHEL 8.x  | servera.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
+  | RHEL 8.x  | serverb.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
+  | RHEL 8.x  | serverc.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
+  | RHEL 8.x  | serverd.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
 
-    >**Note**: You can use /etc/hosts in each machine to name them ( need not to have DNS ) then, you can install ansible 2.9 on workstation machine and pull this repo to practice 
+    >**Note**: You can use /etc/hosts in each machine to name them ( need not to have DNS )
+    >**Note**: You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
 
 ### navigation 
 
@@ -24,5 +27,10 @@ This repo contains 2 sub folders:
 
 ### usage
 
+- This Repo is strictly for Steve's Student whom have attended RH294 only 
+- This repo will be removed on Final Day of Training Delivery, Please clone / download an offline copy ASAP. 
+- DO NOT share this repo PUBLICLY 
+
+Thank You : Steve
 
 
