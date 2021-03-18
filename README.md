@@ -1,7 +1,8 @@
-# ansible-x
-ansible example exercise files
+# ansible-x 294 Assets
 
-To Practice with these files, you need 5 Host *  EL [7|8] 
+## ansible example exercise files
+
+To Practice with these files, you need 5 host 
 named as the following 
 
 
