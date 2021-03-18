@@ -14,7 +14,7 @@ To Practice, you need 5 host/vm with the following settings:
   | RHEL 8.x  | serverc.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
   | RHEL 8.x  | serverd.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
 
- >**Note** : You can use /etc/hosts in each machine to name them ( need not to have DNS )
+ >**Note** : You can use /etc/hosts in each machine to name them to resolve hostname in ansible ( need not to have DNS )
 
  >**Note** : You need to configure Auto Login via SSH from Workstation to All Servers [hint: ssh_keygen / ssh_copy_id]
 
