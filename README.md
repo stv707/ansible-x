@@ -18,11 +18,9 @@ To Practice, you need 5 host/vm with the following settings:
 
  >**Note** : You need to configure your workstation with a valid yum repo that has base and ansible binaries ( HINT: you can download RHEL and Ansible ISO from redhat and loop mount in workstation and make it available via http service , so that server machines can access it as a repo )
 
- >**Note** : You need to configure NON Password based sudo escalation on each servers to facilitate the ansible execution [hint: /etc/sudoers.d/]
- 
  >**Note** : You can modify the requirement to meet your personal machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
 
- >**Note** : if your personal machine do not meet the requirement, then , you may deploy the VM on AWS or Azure with trial account which should last for 30days ( because of the VM spec RAM is LOW )
+ >**Note** : if your personal machine do not meet the requirement, then , you may deploy RHEL VM on AWS or Azure with trial account which should last for 30days ( because of the VM spec RAM is LOW )
 
 ### navigation 
 

@@ -2,7 +2,7 @@
 
 ### Configure Ansible Env
 
-Install/Configure Ansible on Workstation and server machine with following settings:
+Install/Configure Ansible on Workstation machine with following settings:
 + On workstation machine create a user called neo with password ABcd!@# and su to user neo 
 
 + install ansible 2.9 on workstation 
