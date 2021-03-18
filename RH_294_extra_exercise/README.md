@@ -1,4 +1,4 @@
-## ansible-x 294 Extra Exercise 
+## ansible-x 294 E-Practice 
 
 ### Configure Ansible Env
 
@@ -64,11 +64,12 @@ Configure the managed host with the proper configuration:
    3. A template file called index.html.j2 exist and is used to create default index.html page with following output 
 
    ```sh
-   Welcome to HOSTNAME on IPADDRESS
+   Welcome to BlackMesa-East
+   You are serving machine: HOSTNAME on IPADDRESS
    SYSTEM memory is MEMORY
    ```
 
-   >note: the HOSTNAME is the FQDN of the managed host and IPADDRESS is IP address of the managed host and MEMORY is the memory amount in Mb of the managed hosts
+   >note: the HOSTNAME is the FQDN of the managed host and IPADDRESS is IP address of the managed host and MEMORY is the memory amount in Mb of the managed host
    4. Create a playbook called init_webstar.yml that uses role webstar that runs on all blackmesa-east managed system 
 
 ### Create Web Directory 
@@ -95,7 +96,7 @@ Configure the managed host with the proper configuration:
    blackmesa-east
    blackmesa
    ```
-   >Note: The above list is auto generated based on managed host membership, in the case of servera, based on ansible inventory, it belongs dev, devtest , blackmesa-east and blackmesa host group ( refer Configure Ansible Env section )
+   >Note: The above list is auto generated based on managed host membership, in the case of servera, based on ansible inventory, it belongs to dev, devtest , blackmesa-east and blackmesa host group ( refer Configure Ansible Env section )
 
 ### Ansible-vault 
 + Create a ansible vault to store user name and password as follows:
