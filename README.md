@@ -15,6 +15,7 @@ To Practice with these files, you need 5 host/vm with the following settings:
   | RHEL 8.x  | serverd.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
 
     >**Note**: You can use /etc/hosts in each machine to name them ( need not to have DNS )
+    
     >**Note**: You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
 
 ### navigation 
@@ -27,10 +28,11 @@ This repo contains 2 sub folders:
 
 ### usage
 
-- This Repo is strictly for Steve's Student whom have attended RH294 only 
+- This Repo is strictly for Student whom have attended RH294 only 
 - This repo will be removed on Final Day of Training Delivery, Please clone / download an offline copy ASAP. 
-- DO NOT share this repo PUBLICLY 
+- DO NOT share ANY of the content of this repo on public domain. 
+- You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
 
-Thank You : Steve
+Thank You : @banditbroz 
 
 
