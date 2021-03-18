@@ -20,7 +20,9 @@ To Practice, you need 5 host/vm with the following settings:
 
  >**Note** : You need to configure NON Password based sudo escalation on each servers to facilitate the ansible execution [hint: /etc/sudoers.d/]
  
- >**Note** : You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
+ >**Note** : You can modify the requirement to meet your personal machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
+
+ >**Note** : if your personal machine do not meet the requirement, then , you may deploy the VM on AWS or Azure with trial account which should last for 30days ( because of the VM spec RAM is LOW )
 
 ### navigation 
 
@@ -36,5 +38,6 @@ This repo contains 2 sub folders:
 - This repo will be removed on Final Day of Training Delivery, Please clone / download an offline copy ASAP. 
 - DO NOT share ANY of the content of this repo on public domain. 
 - You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
+- the lab prefix command will not work on NON training machine (you don't need them because the folders RH_294_exercise contains all the practice that the lab prefix creates )
 
 Thank You : @banditbroz 
