@@ -16,9 +16,9 @@ To Practice, you need 5 host/vm with the following settings:
 
  >**Note** : You can use /etc/hosts in each machine to name them ( need not to have DNS )
 
- >**Note** : You need to configure Auto Login via SSH from Workstation to All Servers [ hint: ssh_keygen / ssh_copy_id ]
+ >**Note** : You need to configure Auto Login via SSH from Workstation to All Servers [hint: ssh_keygen / ssh_copy_id]
 
- >**Note** : You need to configure NON Password based sudo escalation on each servers to facilitate the ansible execution [ hint: /etc/sudoers.d/ ]
+ >**Note** : You need to configure NON Password based sudo escalation on each servers to facilitate the ansible execution [hint: /etc/sudoers.d/]
  
  >**Note** : You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
 
