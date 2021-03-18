@@ -14,11 +14,9 @@ To Practice with these files, you need 5 host/vm with the following settings:
   | RHEL 8.x  | serverc.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
   | RHEL 8.x  | serverd.lab.example.com | VM | 1gb RAM with min Env + Base Python 3+ | 
 
-
-     >**Note** : You can use /etc/hosts in each machine to name them ( need not to have DNS )
-
-
-     >**Note** : You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
+ >**Note** : You can use /etc/hosts in each machine to name them ( need not to have DNS )
+ 
+ >**Note** : You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
 
 
 ### navigation 
