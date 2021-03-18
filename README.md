@@ -4,7 +4,7 @@
 
 ### requirement 
 
-To Practice with these files, you need 5 host/vm with the following settings: 
+To Practice, you need 5 host/vm with the following settings: 
 
   | System | HostName | Spec | Min Env | 
   | --- | --- | --- |--- | 
@@ -17,7 +17,6 @@ To Practice with these files, you need 5 host/vm with the following settings:
  >**Note** : You can use /etc/hosts in each machine to name them ( need not to have DNS )
  
  >**Note** : You can modify the requirement to meet your machine spec, for example, you may remove serverc and serverd, but, you need to update the practice ansible config to use only servera and serverb 
-
 
 ### navigation 
 
@@ -35,5 +34,3 @@ This repo contains 2 sub folders:
 - You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
 
 Thank You : @banditbroz 
-
-
