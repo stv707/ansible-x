@@ -63,18 +63,60 @@ Configure the managed host with the proper configuration:
    2. The firewall is enabled and running with a rule that allow access to http port 
    3. A template file called index.html.j2 exist and is used to create default index.html page with following output 
 
-   ```sh 
-   Welcome to HOSTNAME on IPADDRESS 
+   ```sh
+   Welcome to HOSTNAME on IPADDRESS
    SYSTEM memory is MEMORY
-   ``` 
-   
+   ```
+
    >note: the HOSTNAME is the FQDN of the managed host and IPADDRESS is IP address of the managed host and MEMORY is the memory amount in Mb of the managed hosts
    4. Create a playbook called init_webstar.yml that uses role webstar that runs on all blackmesa-east managed system 
 
-### 
+### Create Web Directory 
++ Create a playbook called init_webdata.yml with the following requirement
+   1. The playbook runs on all blackmesa-east managed host
+   2. Creates a directory called /webdev 
+   3. The /webdev directory have owner permission rwx , group permission rwx and other with read and execute 
+   4. Create a symbolic link /var/www/html/webdev to /webdev 
+   5. Create a index.html inside /webdev that has single line: BLACKMESA-EAST
+   6. Browsing this directory on blackmesa-east managed host should produce : 
+
+   ```sh 
+   BLACKMESA-EAST
+   ```
+
+### Create/Modify File content
++ Create a Playbook called init_file.yml that runs on all managed host, with the following requirement 
+   1. Create a file called  /web/initfile.txt 
+   2. The file content must have the ansible group name the managed host belongs to.
+   >Example: in the managed host servera.lab.example.com, the content should read as:
+   ```sh 
+   dev
+   devtest
+   blackmesa-east
+   blackmesa
+   ```
+   >Note: The above list is auto generated based on managed host membership, in the case of servera, based on ansible inventory, it belongs dev, devtest , blackmesa-east and blackmesa host group ( refer Configure Ansible Env section )
+
+### Ansible-vault 
++ Create a ansible vault to store user name and password as follows:
+   1. the name of the ansible vault is locked.yml 
+   2. the vault have 3 variables with names:
+   ```sh 
+      pass_dev with value NotailAna
+      pass_blackmesa with value GordonFreeman
+      pass_test with value SpecCarry
+   ```
+   3. The password to encrypt and decrypt the ansible vault locked.yml is DotaDataDita37
+   4. The password should be stored in the file secdef.txt 
 
 
+### User Management 
++ Create a playbook called ug.yml that will call the ansible vault file locked.yml (created on previous task) that will do the following:
+   1. creates user called gordon and alex on all managed host using password value from variable pass_blackmesa 
+   2. create user called tom and bob on all managed host using password value from variable pass_dev 
+   3. user gordon and alex must belong to a group called blackmesa-g
+   4. user tom and bob belongs to a group called dev-g 
 
 
-
+### END
 
