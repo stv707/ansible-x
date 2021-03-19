@@ -121,3 +121,9 @@ Configure the managed host with the proper configuration:
 
 ### END
 
+# More resources for exam prep: 
+
+https://www.lisenet.com/2019/ansible-sample-exam-for-ex294/
+
+https://networknuts.net/sample-exam-ex294/
+
