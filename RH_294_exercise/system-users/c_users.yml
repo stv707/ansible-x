@@ -1,0 +1,14 @@
+---
+  - name: C Create with Passeord
+    hosts: all 
+    vars:
+      - mypass : password
+    tasks:
+      - name: Create USER
+        user: 
+          name: "{{ item }}"
+          password: "{{ mypass | password_hash('sha512') }}" 
+          state: present
+        loop:
+          - user1
+          - user2 

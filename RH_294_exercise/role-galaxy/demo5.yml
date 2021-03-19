@@ -1,0 +1,8 @@
+---
+  - name: use multi role playbook
+    hosts: devservers
+
+    roles:
+      - geerlingguy.php-mysql
+      - phpinfo
+

@@ -1,0 +1,14 @@
+---
+ - name: generate hosts name and class
+   hosts: all
+   become: yes
+   gather_facts: true
+   tasks:
+    - name: loop over inventory
+      template: 
+                   src: files/hosts2.j2
+                   dest: /etc/myhosts2
+                   owner: root
+                   group: root
+                   mode: 0644
+      when: inventory_hostname in groups['webservers']

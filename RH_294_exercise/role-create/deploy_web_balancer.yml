@@ -1,0 +1,33 @@
+---
+  - name: Deploy Web and balancer via Roles Demo
+    hosts: webservers balancers
+    become: true
+    gather_facts: false
+    
+    pre_tasks:
+      - name: Gather fact from all hosts groups
+        setup:
+          gather_subset: all 
+        changed_when: true
+        notify: run handler
+
+    tasks:
+      - name: run Balancer Roles on balancers group hosts
+        include_role: 
+          name: balancer
+        when: ('balancers' in group_names) 
+      
+      - name: run Apache Roles on webservers groups hosts
+        include_role:
+          name: apache
+        when: ('webservers' in group_names) 
+      
+      - name: run PhpInfo role on webservers group hosts
+        import_role:
+          name: phpinfo
+        when: ('webservers' in group_names) 
+
+    handlers:
+      - name: run handler
+        debug:
+          msg: All facts captured 

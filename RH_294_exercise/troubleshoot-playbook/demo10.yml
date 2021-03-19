@@ -1,0 +1,11 @@
+---
+  - name: running shell script
+    hosts: all 
+    tasks:
+      - name: script module
+        script: ./runme.sh
+        register: sout
+
+      - name: 
+        debug:
+          var: sout

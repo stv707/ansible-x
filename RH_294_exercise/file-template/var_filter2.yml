@@ -1,0 +1,16 @@
+---
+  - name: Variable Filter
+    hosts: localhost
+    gather_facts: false
+    tasks:
+      - name: Register Yaml format file
+        shell: cat motd.yml
+        register: result 
+      - name: Set variable 
+        set_fact:
+          myvar: "{{ result.stdout }}" 
+
+      - name: Use Jinja to format and create output
+        template:
+          src: files/yaml.j2
+          dest: ./json.txt

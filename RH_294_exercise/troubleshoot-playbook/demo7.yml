@@ -1,0 +1,16 @@
+---
+  - name: demo for check mode 
+    hosts: all
+    vars:
+      - datafile : /var/www/html/star.html
+    tasks:
+      - name: create a file on remote
+        copy:
+          content: "sakura main system api" 
+          dest: "{{ datafile }}"
+
+      - name: set file prop 
+        file:
+          dest: "{{ datafile }}" 
+          owner: root
+          group: root

@@ -1,8 +1,4 @@
----
-- name : Host_Vars Example 
-  hosts: 
-    - servera.lab.example.com
-    - serverb.lab.example.com
+- hosts: servera.lab.example.com
 
   tasks: 
   - name: Calling variable from host_var package 

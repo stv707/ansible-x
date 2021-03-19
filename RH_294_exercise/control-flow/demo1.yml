@@ -1,5 +1,5 @@
 ---
-- name: Cron,SSH and Chronyd is running 
+- name: Cron and Chronyd is running 
   hosts: all
   gather_facts: no 
 

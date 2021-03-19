@@ -1,0 +1,277 @@
+May 21 23:20:29 jegui polkitd[597]: Loading rules from directory /etc/polkit-1/rules.d
+May 21 23:20:29 jegui polkitd[597]: Loading rules from directory /usr/share/polkit-1/rules.d
+May 21 23:20:29 jegui polkitd[597]: Finished loading, compiling and executing 2 rules
+May 21 23:20:29 jegui polkitd[597]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+May 21 23:20:34 jegui useradd[849]: new group: name=student, GID=1000
+May 21 23:20:34 jegui useradd[849]: new user: name=student, UID=1000, GID=1000, home=/home/student, shell=/bin/bash
+May 21 23:20:34 jegui useradd[849]: add 'student' to group 'wheel'
+May 21 23:20:34 jegui useradd[849]: add 'student' to shadow group 'wheel'
+May 21 23:20:34 jegui sshd[860]: Server listening on 0.0.0.0 port 22.
+May 21 23:20:34 jegui sshd[860]: Server listening on :: port 22.
+May 21 23:20:35 jegui sshd[860]: Received signal 15; terminating.
+May 21 23:20:35 jegui sshd[1242]: Server listening on 0.0.0.0 port 22.
+May 21 23:20:35 jegui sshd[1242]: Server listening on :: port 22.
+May 21 23:20:49 jegui groupadd[5673]: group added to /etc/group: name=printadmin, GID=988
+May 21 23:20:49 jegui groupadd[5673]: group added to /etc/gshadow: name=printadmin
+May 21 23:20:49 jegui groupadd[5673]: new group: name=printadmin, GID=988
+May 21 23:21:03 jegui groupadd[5912]: group added to /etc/group: name=libstoragemgmt, GID=987
+May 21 23:21:03 jegui groupadd[5912]: group added to /etc/gshadow: name=libstoragemgmt
+May 21 23:21:03 jegui groupadd[5912]: new group: name=libstoragemgmt, GID=987
+May 21 23:21:03 jegui useradd[5919]: new user: name=libstoragemgmt, UID=991, GID=987, home=/var/run/lsm, shell=/sbin/nologin
+May 21 23:21:20 jegui polkitd[597]: Reloading rules
+May 21 23:21:20 jegui polkitd[597]: Collecting garbage unconditionally...
+May 21 23:21:20 jegui polkitd[597]: Loading rules from directory /etc/polkit-1/rules.d
+May 21 23:21:20 jegui polkitd[597]: Loading rules from directory /usr/share/polkit-1/rules.d
+May 21 23:21:20 jegui polkitd[597]: Finished loading, compiling and executing 3 rules
+May 21 23:21:20 jegui polkitd[597]: Reloading rules
+May 21 23:21:20 jegui polkitd[597]: Collecting garbage unconditionally...
+May 21 23:21:20 jegui polkitd[597]: Loading rules from directory /etc/polkit-1/rules.d
+May 21 23:21:20 jegui polkitd[597]: Loading rules from directory /usr/share/polkit-1/rules.d
+May 21 23:21:20 jegui polkitd[597]: Finished loading, compiling and executing 3 rules
+May 21 23:21:25 jegui groupadd[6012]: group added to /etc/group: name=slocate, GID=21
+May 21 23:21:25 jegui groupadd[6012]: group added to /etc/gshadow: name=slocate
+May 21 23:21:25 jegui groupadd[6012]: new group: name=slocate, GID=21
+May 21 23:22:20 jegui passwd[27790]: pam_unix(passwd:chauthtok): password changed for root
+Mar 16 00:28:28 jegui polkitd[679]: Loading rules from directory /etc/polkit-1/rules.d
+Mar 16 00:28:28 jegui polkitd[679]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar 16 00:28:28 jegui polkitd[679]: Finished loading, compiling and executing 3 rules
+Mar 16 00:28:28 jegui polkitd[679]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar 16 00:28:33 jegui sshd[739]: Server listening on 0.0.0.0 port 22.
+Mar 16 00:28:33 jegui sshd[739]: Server listening on :: port 22.
+Mar 16 00:29:46 jegui useradd[1333]: new group: name=devops, GID=1001
+Mar 16 00:29:46 jegui useradd[1333]: new user: name=devops, UID=1001, GID=1001, home=/home/devops, shell=/bin/bash
+Mar 16 00:30:22 jegui sshd[1375]: Accepted publickey for root from 172.25.250.9 port 40424 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 00:30:22 jegui systemd[1379]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 00:30:22 jegui sshd[1375]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 00:30:23 jegui sshd[1389]: Received disconnect from 172.25.250.9 port 40424:11: disconnected by user
+Mar 16 00:30:23 jegui sshd[1389]: Disconnected from user root 172.25.250.9 port 40424
+Mar 16 00:30:23 jegui sshd[1375]: pam_unix(sshd:session): session closed for user root
+Mar 16 00:30:23 jegui sshd[1401]: Accepted publickey for root from 172.25.250.9 port 40426 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 00:30:23 jegui systemd[1412]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 00:30:23 jegui sshd[1401]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 00:30:24 jegui sshd[1422]: Received disconnect from 172.25.250.9 port 40426:11: disconnected by user
+Mar 16 00:30:24 jegui sshd[1422]: Disconnected from user root 172.25.250.9 port 40426
+Mar 16 00:30:24 jegui sshd[1401]: pam_unix(sshd:session): session closed for user root
+Mar 16 08:15:07 jegui sshd[6105]: Accepted publickey for root from 172.25.250.9 port 40702 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 08:15:07 jegui systemd[6109]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 08:15:07 jegui sshd[6105]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 08:15:13 jegui sshd[739]: Received signal 15; terminating.
+Mar 16 08:15:13 jegui sshd[6373]: Server listening on 0.0.0.0 port 22.
+Mar 16 08:15:13 jegui sshd[6373]: Server listening on :: port 22.
+Mar 16 08:15:13 jegui sshd[6386]: Accepted publickey for root from 172.25.250.9 port 40704 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 08:15:13 jegui sshd[6386]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 08:15:13 jegui sshd[6389]: Received disconnect from 172.25.250.9 port 40704:11: disconnected by user
+Mar 16 08:15:13 jegui sshd[6389]: Disconnected from user root 172.25.250.9 port 40704
+Mar 16 08:15:13 jegui sshd[6386]: pam_unix(sshd:session): session closed for user root
+Mar 16 08:16:13 jegui sshd[6120]: Received disconnect from 172.25.250.9 port 40702:11: disconnected by user
+Mar 16 08:16:13 jegui sshd[6120]: Disconnected from user root 172.25.250.9 port 40702
+Mar 16 08:16:13 jegui sshd[6105]: pam_unix(sshd:session): session closed for user root
+Mar 16 08:35:53 jegui sshd[6567]: Accepted publickey for student from 172.25.250.9 port 40712 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 08:35:53 jegui systemd[6571]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 08:35:53 jegui sshd[6567]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 08:37:28 jegui sshd[6582]: Received disconnect from 172.25.250.9 port 40712:11: disconnected by user
+Mar 16 08:37:28 jegui sshd[6582]: Disconnected from user student 172.25.250.9 port 40712
+Mar 16 08:37:28 jegui sshd[6567]: pam_unix(sshd:session): session closed for user student
+Mar 16 08:37:28 jegui systemd[6576]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 08:37:34 jegui sshd[6980]: Accepted publickey for devops from 172.25.250.9 port 40722 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 08:37:34 jegui systemd[6984]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 08:37:34 jegui sshd[6980]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 08:37:36 jegui sudo[7114]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-obhsvlurdzegidbwxvzymnjwimtsumbs ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898254.1749132-28713501354903/AnsiballZ_setup.py
+Mar 16 08:37:36 jegui sudo[7114]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:37:36 jegui sudo[7114]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:37:37 jegui sudo[7114]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:37:54 jegui sudo[7238]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pwdilshbnkxkfkbqglbhruhifjyotgss ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898257.6484807-32969171325483/AnsiballZ_dnf.py
+Mar 16 08:37:54 jegui sudo[7238]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:37:54 jegui sudo[7238]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:37:56 jegui sudo[7238]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:38:22 jegui sudo[7364]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mlwnwlnwdnmiaitnxyfhtguacqsibich ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898280.9963515-139637112862706/AnsiballZ_dnf.py
+Mar 16 08:38:22 jegui sudo[7364]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:38:22 jegui sudo[7364]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:38:23 jegui sudo[7364]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:39:03 jegui sudo[7490]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rfnkcwsuphyyoqjafqldqbfrgpblnbma ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898313.023826-27981858224135/AnsiballZ_systemd.py
+Mar 16 08:39:03 jegui sudo[7490]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:39:03 jegui sudo[7490]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:39:03 jegui sudo[7490]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:39:40 jegui sudo[7609]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rzwnimhkctntwomhtrcvzxhbbdrjxtfn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898352.440345-276515658525477/AnsiballZ_systemd.py
+Mar 16 08:39:40 jegui sudo[7609]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:39:40 jegui sudo[7609]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:39:40 jegui sudo[7609]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:40:20 jegui sudo[7722]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wqelmcqwoltkqapsohascmlhjnlxevnw ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898385.9422662-281159022783808/AnsiballZ_firewalld.py
+Mar 16 08:40:20 jegui sudo[7722]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:40:20 jegui sudo[7722]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:40:20 jegui sudo[7722]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:41:17 jegui sudo[7829]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tpvunnolrpblzxpircoeglrxgabbpbrl ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898430.647567-69825767442084/AnsiballZ_stat.py
+Mar 16 08:41:17 jegui sudo[7829]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:41:17 jegui sudo[7829]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:41:18 jegui sudo[7829]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:42:43 jegui sudo[7936]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-sulriceoeakedcxerzcxotkztlsbgydo ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898506.5525165-264998756158325/AnsiballZ_systemd.py
+Mar 16 08:42:43 jegui sudo[7936]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:42:43 jegui sudo[7936]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:42:43 jegui sudo[7936]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:43:47 jegui sudo[8047]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ubaxvoysdasipadpuatmvimmdwhmscjn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615898578.8964105-95048553735042/AnsiballZ_systemd.py
+Mar 16 08:43:47 jegui sudo[8047]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 08:43:47 jegui sudo[8047]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 08:43:48 jegui sudo[8047]: pam_unix(sudo:session): session closed for user root
+Mar 16 08:45:33 jegui sshd[6994]: Received disconnect from 172.25.250.9 port 40722:11: disconnected by user
+Mar 16 08:45:33 jegui sshd[6994]: Disconnected from user devops 172.25.250.9 port 40722
+Mar 16 08:45:33 jegui sshd[6980]: pam_unix(sshd:session): session closed for user devops
+Mar 16 08:45:33 jegui systemd[6988]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 09:15:33 jegui sshd[8389]: Accepted publickey for devops from 172.25.250.9 port 40728 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 09:15:33 jegui systemd[8393]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 09:15:33 jegui sshd[8389]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 09:17:20 jegui sshd[8404]: Received disconnect from 172.25.250.9 port 40728:11: disconnected by user
+Mar 16 09:17:20 jegui sshd[8404]: Disconnected from user devops 172.25.250.9 port 40728
+Mar 16 09:17:20 jegui sshd[8389]: pam_unix(sshd:session): session closed for user devops
+Mar 16 09:17:20 jegui systemd[8398]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 09:18:08 jegui sshd[8714]: Accepted publickey for root from 172.25.250.9 port 40734 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 09:18:08 jegui systemd[8718]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 09:18:08 jegui sshd[8714]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 09:22:17 jegui sshd[8728]: Received disconnect from 172.25.250.9 port 40734:11: disconnected by user
+Mar 16 09:22:17 jegui sshd[8728]: Disconnected from user root 172.25.250.9 port 40734
+Mar 16 09:22:17 jegui sshd[8714]: pam_unix(sshd:session): session closed for user root
+Mar 16 09:26:12 jegui sshd[9081]: Accepted publickey for root from 172.25.250.9 port 44088 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 09:26:12 jegui systemd[9085]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 09:26:12 jegui sshd[9081]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 09:26:27 jegui sshd[9346]: Accepted publickey for devops from 172.25.250.9 port 44092 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 09:26:27 jegui systemd[9350]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 09:26:27 jegui sshd[9346]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 09:27:14 jegui sshd[9095]: Received disconnect from 172.25.250.9 port 44088:11: disconnected by user
+Mar 16 09:27:14 jegui sshd[9095]: Disconnected from user root 172.25.250.9 port 44088
+Mar 16 09:27:14 jegui sshd[9081]: pam_unix(sshd:session): session closed for user root
+Mar 16 09:27:29 jegui sshd[9361]: Received disconnect from 172.25.250.9 port 44092:11: disconnected by user
+Mar 16 09:27:29 jegui sshd[9361]: Disconnected from user devops 172.25.250.9 port 44092
+Mar 16 09:27:29 jegui sshd[9346]: pam_unix(sshd:session): session closed for user devops
+Mar 16 09:27:29 jegui systemd[9355]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 14:02:00 jegui sshd[12250]: Accepted publickey for devops from 172.25.250.9 port 44118 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 14:02:00 jegui systemd[12254]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 14:02:00 jegui sshd[12250]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 14:02:01 jegui sudo[12385]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ynvskgbrqkyifeivjgwzrakmfzjubpzy ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615917720.2570176-180020458621190/AnsiballZ_setup.py
+Mar 16 14:02:01 jegui sudo[12385]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 14:02:01 jegui sudo[12385]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 14:02:02 jegui sudo[12385]: pam_unix(sudo:session): session closed for user root
+Mar 16 14:02:03 jegui sudo[12509]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kqugvfvawktkxzdvnkmgpwachhymbkjd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615917722.7577045-175835767467242/AnsiballZ_stat.py
+Mar 16 14:02:03 jegui sudo[12509]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 14:02:03 jegui sudo[12509]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 14:02:03 jegui sudo[12509]: pam_unix(sudo:session): session closed for user root
+Mar 16 14:03:03 jegui sshd[12265]: Received disconnect from 172.25.250.9 port 44118:11: disconnected by user
+Mar 16 14:03:03 jegui sshd[12265]: Disconnected from user devops 172.25.250.9 port 44118
+Mar 16 14:03:03 jegui sshd[12250]: pam_unix(sshd:session): session closed for user devops
+Mar 16 14:03:03 jegui systemd[12259]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 15:15:02 jegui sshd[13234]: Accepted publickey for devops from 172.25.250.9 port 44130 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 15:15:02 jegui systemd[13238]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 15:15:02 jegui sshd[13234]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 15:15:03 jegui sudo[13369]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-nbdpkrrwkmjnnuoopriejpcvwvysvwoo ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922101.7984781-235414494286182/AnsiballZ_setup.py
+Mar 16 15:15:03 jegui sudo[13369]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:15:03 jegui sudo[13369]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:15:03 jegui sudo[13369]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:15:52 jegui sudo[13576]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hwwmasweyevpnlzpakjylusvltovhcrv ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922151.400786-217135218951163/AnsiballZ_setup.py
+Mar 16 15:15:52 jegui sudo[13576]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:15:52 jegui sudo[13576]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:15:52 jegui sudo[13576]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:15:53 jegui sudo[13700]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-giwoncqsmluojzkruintxkyjznttrkul ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922153.121075-161034581385868/AnsiballZ_stat.py
+Mar 16 15:15:53 jegui sudo[13700]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:15:53 jegui sudo[13700]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:15:53 jegui sudo[13700]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:16:15 jegui sudo[13840]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xxaaegysyqmxoskkrlbmnvpwqvfzsmkr ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922175.0302536-184308227383264/AnsiballZ_setup.py
+Mar 16 15:16:15 jegui sudo[13840]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:16:15 jegui sudo[13840]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:16:16 jegui sudo[13840]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:16:17 jegui sudo[13964]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-orkbcmrzcucwenfbedaczwwlxadmpprc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922176.851091-275100943508807/AnsiballZ_stat.py
+Mar 16 15:16:17 jegui sudo[13964]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:16:17 jegui sudo[13964]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:16:17 jegui sudo[13964]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:16:18 jegui sudo[14052]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gwwatilohxhnwlqinzfsykbtjhdjbpfm ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922176.851091-275100943508807/AnsiballZ_copy.py
+Mar 16 15:16:18 jegui sudo[14052]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:16:18 jegui sudo[14052]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:16:18 jegui sudo[14052]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:16:23 jegui sshd[14075]: Accepted publickey for student from 172.25.250.9 port 44134 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 15:16:23 jegui systemd[14079]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 15:16:23 jegui sshd[14075]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 15:16:34 jegui sshd[14090]: Received disconnect from 172.25.250.9 port 44134:11: disconnected by user
+Mar 16 15:16:34 jegui sshd[14090]: Disconnected from user student 172.25.250.9 port 44134
+Mar 16 15:16:34 jegui sshd[14075]: pam_unix(sshd:session): session closed for user student
+Mar 16 15:16:34 jegui systemd[14084]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 15:17:18 jegui sshd[13249]: Received disconnect from 172.25.250.9 port 44130:11: disconnected by user
+Mar 16 15:17:18 jegui sshd[13249]: Disconnected from user devops 172.25.250.9 port 44130
+Mar 16 15:17:18 jegui sshd[13234]: pam_unix(sshd:session): session closed for user devops
+Mar 16 15:17:18 jegui systemd[13243]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 15:17:52 jegui sshd[14166]: Accepted publickey for devops from 172.25.250.9 port 44146 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 15:17:53 jegui systemd[14170]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 15:17:53 jegui sshd[14166]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 15:17:53 jegui sudo[14300]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hqvlodffydxvsmoxpvsevukjkdldneds ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922272.7369316-213033433982062/AnsiballZ_setup.py
+Mar 16 15:17:53 jegui sudo[14300]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:17:53 jegui sudo[14300]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:17:54 jegui sudo[14300]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:17:56 jegui sudo[14424]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kfayildzvwosugsscmndjdabenxqdaho ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922275.992752-247395419040444/AnsiballZ_stat.py
+Mar 16 15:17:56 jegui sudo[14424]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:17:56 jegui sudo[14424]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:17:56 jegui sudo[14424]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:17:57 jegui sudo[14514]: devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qoyzeqcewjosmlzufnvqbskezfwlbyjd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1615922275.992752-247395419040444/AnsiballZ_copy.py
+Mar 16 15:17:57 jegui sudo[14514]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:17:57 jegui sudo[14514]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Mar 16 15:17:57 jegui sudo[14514]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:18:57 jegui sshd[14180]: Received disconnect from 172.25.250.9 port 44146:11: disconnected by user
+Mar 16 15:18:57 jegui sshd[14180]: Disconnected from user devops 172.25.250.9 port 44146
+Mar 16 15:18:57 jegui sshd[14166]: pam_unix(sshd:session): session closed for user devops
+Mar 16 15:18:57 jegui systemd[14174]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 15:19:39 jegui sshd[14590]: Accepted publickey for devops from 172.25.250.9 port 44154 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 15:19:39 jegui systemd[14594]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 15:19:39 jegui sshd[14590]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 15:19:39 jegui sudo[14605]: devops : TTY=unknown ; PWD=/home/devops ; USER=root ; COMMAND=/bin/rm /etc/myhosts2
+Mar 16 15:19:39 jegui sudo[14605]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar 16 15:19:39 jegui sudo[14605]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:19:39 jegui sudo[14605]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:19:39 jegui sshd[14604]: Received disconnect from 172.25.250.9 port 44154:11: disconnected by user
+Mar 16 15:19:39 jegui sshd[14604]: Disconnected from user devops 172.25.250.9 port 44154
+Mar 16 15:19:39 jegui sshd[14590]: pam_unix(sshd:session): session closed for user devops
+Mar 16 15:19:39 jegui systemd[14598]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 15:20:01 jegui sshd[14629]: Accepted publickey for student from 172.25.250.9 port 44162 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 15:20:02 jegui systemd[14633]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 15:20:02 jegui sshd[14629]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 15:20:07 jegui sshd[14643]: Received disconnect from 172.25.250.9 port 44162:11: disconnected by user
+Mar 16 15:20:07 jegui sshd[14643]: Disconnected from user student 172.25.250.9 port 44162
+Mar 16 15:20:07 jegui sshd[14629]: pam_unix(sshd:session): session closed for user student
+Mar 16 15:20:07 jegui systemd[14637]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 18:12:58 jegui sshd[16279]: Accepted publickey for root from 172.25.250.9 port 44284 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:12:58 jegui systemd[16283]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 18:12:58 jegui sshd[16279]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 18:14:01 jegui sshd[16294]: Received disconnect from 172.25.250.9 port 44284:11: disconnected by user
+Mar 16 18:14:01 jegui sshd[16294]: Disconnected from user root 172.25.250.9 port 44284
+Mar 16 18:14:01 jegui sshd[16279]: pam_unix(sshd:session): session closed for user root
+Mar 16 18:17:09 jegui sshd[16641]: Accepted publickey for devops from 172.25.250.9 port 44294 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:17:09 jegui systemd[16645]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Mar 16 18:17:09 jegui sshd[16641]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Mar 16 18:18:49 jegui sshd[16655]: Received disconnect from 172.25.250.9 port 44294:11: disconnected by user
+Mar 16 18:18:49 jegui sshd[16655]: Disconnected from user devops 172.25.250.9 port 44294
+Mar 16 18:18:49 jegui sshd[16641]: pam_unix(sshd:session): session closed for user devops
+Mar 16 18:18:49 jegui systemd[16649]: pam_unix(systemd-user:session): session closed for user devops
+Mar 16 18:24:01 jegui sshd[17248]: Accepted publickey for root from 172.25.250.9 port 44296 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:24:01 jegui systemd[17252]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 18:24:01 jegui sshd[17248]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 16 18:25:03 jegui sshd[17262]: Received disconnect from 172.25.250.9 port 44296:11: disconnected by user
+Mar 16 18:25:03 jegui sshd[17262]: Disconnected from user root 172.25.250.9 port 44296
+Mar 16 18:25:03 jegui sshd[17248]: pam_unix(sshd:session): session closed for user root
+Mar 16 18:26:16 jegui sshd[17479]: Accepted publickey for student from 172.25.250.9 port 44304 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:26:16 jegui systemd[17483]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 18:26:16 jegui sshd[17479]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 18:27:18 jegui sshd[17493]: Received disconnect from 172.25.250.9 port 44304:11: disconnected by user
+Mar 16 18:27:18 jegui sshd[17493]: Disconnected from user student 172.25.250.9 port 44304
+Mar 16 18:27:18 jegui sshd[17479]: pam_unix(sshd:session): session closed for user student
+Mar 16 18:27:18 jegui systemd[17487]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 18:29:17 jegui sshd[17769]: Accepted publickey for student from 172.25.250.9 port 44310 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:29:17 jegui systemd[17773]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 18:29:17 jegui sshd[17769]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 18:30:19 jegui sshd[17783]: Received disconnect from 172.25.250.9 port 44310:11: disconnected by user
+Mar 16 18:30:19 jegui sshd[17783]: Disconnected from user student 172.25.250.9 port 44310
+Mar 16 18:30:19 jegui sshd[17769]: pam_unix(sshd:session): session closed for user student
+Mar 16 18:30:19 jegui systemd[17777]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 18:30:39 jegui sshd[18086]: Accepted publickey for student from 172.25.250.9 port 44314 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:30:39 jegui systemd[18090]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Mar 16 18:30:39 jegui sshd[18086]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Mar 16 18:31:41 jegui sshd[18100]: Received disconnect from 172.25.250.9 port 44314:11: disconnected by user
+Mar 16 18:31:41 jegui sshd[18100]: Disconnected from user student 172.25.250.9 port 44314
+Mar 16 18:31:41 jegui sshd[18086]: pam_unix(sshd:session): session closed for user student
+Mar 16 18:31:41 jegui systemd[18094]: pam_unix(systemd-user:session): session closed for user student
+Mar 16 18:33:20 jegui sshd[18393]: Accepted publickey for root from 172.25.250.9 port 44318 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar 16 18:33:20 jegui systemd[18397]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 16 18:33:21 jegui sshd[18393]: pam_unix(sshd:session): session opened for user root by (uid=0)

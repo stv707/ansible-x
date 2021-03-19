@@ -1,0 +1,11 @@
+---
+  - name: get Info
+    hosts: serverb.lab.example.com
+
+    tasks:
+      - name: Print Interface
+        when: hostvars[ansible_fqdn]['ansible_'~item]['ipv4'] is not defined 
+        debug:
+           msg: "{{ hostvars[ansible_fqdn]['ansible_'~item]['ipv4'] | pprint }}"
+        with_items:
+            - "{{ ansible_interfaces | map('replace', '-','_') | list }}"

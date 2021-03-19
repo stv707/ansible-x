@@ -1,6 +1,6 @@
 ---
 - name: check users on remote hosts  
-  hosts: servera.lab.example.com 
+  hosts: all
   gather_facts: no 
 
 

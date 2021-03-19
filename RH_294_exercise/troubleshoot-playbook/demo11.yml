@@ -1,0 +1,12 @@
+---
+  - name: demo for fail and assert 
+    hosts:  all
+    tasks:
+      - name: lets stat a file
+        stat:
+          path : /var/www/html/star.html
+        register: return
+
+      - name: display full out of stat
+        debug:
+          var: return

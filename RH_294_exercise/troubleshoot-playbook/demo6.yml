@@ -1,0 +1,24 @@
+--- 
+  - name: debug demo
+    hosts: all 
+
+    tasks:
+      - name: Run UPtime
+        shell: /usr/bin/uptime
+        register: aaa
+
+      - name: display result
+        debug:
+          var: aaa.stdout 
+      
+      - name: Run whoami
+        shell: /usr/bin/whoami
+        register: bbb
+
+      - name: display result 
+        debug:
+          var: bbb.stdout 
+
+      - name: display from both out
+        debug:
+          msg: "uptime: {{ aaa.stdout }} and who: {{ bbb.stdout }}"

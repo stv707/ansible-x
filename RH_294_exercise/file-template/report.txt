@@ -1,0 +1,11 @@
+Ansible managed: modified on 2021-03-17 02:59:20
+----------------------------------------------------------------------------
+The highest number is: 9
+The Lowest number is: 1 
+Selecting random number from list: 1
+Join all the value from the list with a dash: 1-2-3-4-5-6-7-8-9
+-----------------------------------------------------------------------------
+
+string variable to upper case: REDHAT
+string variable to capitalize: Redhat
+-----------------------------------------------------------------------------

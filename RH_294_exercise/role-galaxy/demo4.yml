@@ -1,0 +1,16 @@
+---
+  - name: use redis.dev role playbook
+    hosts: devservers
+
+
+    pre_tasks:
+      - name: setup SePort for 4545 before role exec
+        seport:
+          ports: 4545
+          proto: tcp 
+          setype: redis_port_t
+          state: present
+
+    roles:
+      - { role: redis.dev, redis_port: 4545 } 
+

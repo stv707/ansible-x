@@ -1,9 +1,0 @@
----
-- hosts: all 
-  tasks:
-    - name : Print Ansible Fact (specific )
-      debug:
-        msg: |
-          The IPv4 of the {{ ansible_facts.fqdn }} 
-          is {{ ansible_facts.default_ipv4.address }} 
-          The system runs {{ ansible_facts.kernel }} kernel 

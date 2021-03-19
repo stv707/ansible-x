@@ -1,0 +1,14 @@
+---
+# tasks file for phpinfo
+#
+
+- name: install php 
+  yum:
+    name: '{{ package }}' 
+    state: present
+
+- name: generate php info page
+  template:
+    src: hello.php.j2
+    dest: /var/www/html/hello.php
+

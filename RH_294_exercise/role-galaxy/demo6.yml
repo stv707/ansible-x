@@ -1,0 +1,9 @@
+---
+  - name: use multi role playbook
+    hosts: devservers
+
+    roles:
+      - geerlingguy.repo-epel
+      - { role: geerlingguy.php-mysql, php_enablerepo: epel, php_mysql_package: php-mysqlnd  } 
+      - phpinfo
+

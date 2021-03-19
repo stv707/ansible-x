@@ -1,0 +1,16 @@
+--- 
+  - name: debug demo
+    hosts: all 
+
+    tasks:
+      - name: Run UPtime
+        shell: /usr/bin/uptime
+        register: aaa
+
+      - name: display result
+        debug:
+          var: aaa
+
+      - name: display stdout
+        debug:
+          var: aaa.stdout

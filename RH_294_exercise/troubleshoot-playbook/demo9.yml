@@ -1,0 +1,17 @@
+---
+  - name: testing with modules
+    hosts: localhost
+    gather_facts: no
+    become: no
+
+    tasks:
+      - name: using uri 
+        uri:
+          url: http://servera.lab.example.com/star.html
+          return_content: yes
+        register: return
+
+      - name: fail module
+        fail:
+          msg: "sakura not found"
+        when: "'sakura' not in return.content"

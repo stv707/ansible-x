@@ -1,11 +1,12 @@
 ---
 - name: Update web server
   hosts: webservers
+  serial: 2 
 
   tasks:
     - name: Latest version of apache installed
       yum:
-        name: httpd
+        name: http
         state: latest
       notify:
         - Restart apache

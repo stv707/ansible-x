@@ -1,0 +1,8 @@
+---
+  - name: demo for debug module
+    hosts: all
+    
+    tasks:
+      - name: get some info from target host
+        debug:
+          msg: "System IP is {{ ansible_default_ipv4.address }}" 

@@ -4,12 +4,11 @@
 # with examples from Ansible Documentation:
 
 
-
 # # from galaxy
-#  - src: yatesr.timezone
+# - src: yatesr.timezone
 #
 # # from GitHub
-#  - src: https://github.com/bennojoy/nginx
+# - src: https://github.com/bennojoy/nginx
 #
 # # from GitHub, overriding the name and specifying a specific tag
 # - src: https://github.com/bennojoy/nginx
@@ -21,8 +20,8 @@
 #   name: http-role
 #
 # # from Bitbucket
-#  - src: git+https://bitbucket.org/willthames/git-ansible-galaxy
-#    version: v1.4
+# - src: git+https://bitbucket.org/willthames/git-ansible-galaxy
+#   version: v1.4
 #
 # # from Bitbucket, alternative syntax and caveats
 # - src: https://bitbucket.org/willthames/hg-ansible-galaxy

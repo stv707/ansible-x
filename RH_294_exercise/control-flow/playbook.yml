@@ -6,7 +6,7 @@
       - mariadb-server
       - python3-PyMySQL
     release_name:
-      -Fedora 
+      - RedHat
     sysfqdn: 
       - servera.lab.example.com 
 
@@ -21,12 +21,11 @@
         - ansible_fqdn in sysfqdn 
       notify: 
         - Start MariaDB service
+
+
   handlers: 
     - name: Start MariaDB service
       service:
         name: mariadb
         state: started
         enabled: true
-
-
-

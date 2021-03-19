@@ -1,0 +1,7 @@
+---
+network_connections:
+  - name: "{{ netif }}" 
+    type: ethernet
+    ip:
+      address:
+        - "{{ myip }}" 

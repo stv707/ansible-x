@@ -11,7 +11,3 @@ webservers
 dbservers
 appservers
 virtualservers
-
-[dev:children]
-virtualservers
-appservers

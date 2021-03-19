@@ -1,0 +1,5 @@
+- src: http://rhgls.realm1.example.com/materials/haproxy.tar
+  name: balancer
+
+- src: http://rhgls.realm1.example.com/materials/phpinfo.tar
+  name: phpinfo

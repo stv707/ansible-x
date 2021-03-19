@@ -10,7 +10,7 @@
           - firewalld
           - mariadb-server
           - php
-          - php-mysqlnd
+          - php-mysql
         state: latest
 
     - name: firewalld enabled and running
@@ -52,4 +52,4 @@
       uri:
         url: http://serverb.lab.example.com
         status_code: 200
-...
+

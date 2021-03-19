@@ -1,7 +1,6 @@
 ---
 - name: Installing MariaDB server
   hosts: databases
-  force_handlers: yes 
   vars:
     db_packages:
       - mariadb-server
@@ -17,7 +16,6 @@
          state: present
       notify:
         - set db password
-        - restart db service  
 
     - name: Make sure the database service is running
       service:

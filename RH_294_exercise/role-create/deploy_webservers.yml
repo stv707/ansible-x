@@ -1,0 +1,41 @@
+---
+  - name: Deploy Webservers via Roles Demo
+    hosts: webservers
+    become: true
+    
+    pre_tasks:
+      - name: Gather fact from all hosts groups
+        setup:
+          gather_subset: all 
+        changed_when: true
+        notify: run handler pre
+
+    tasks:
+      - name: send some File
+        copy:
+          content: 'DATABIN'
+          dest: /etc/databin
+        notify: run handler task
+
+    roles:
+      - apache
+
+    post_tasks:
+      - name: post task 
+        setup:
+          gather_subset: all
+        changed_when: true
+        notify : run handler post
+
+    handlers:
+      - name: run handler pre
+        debug:
+          msg: running PLAYBOOK PRE handler
+    
+      - name: run handler task
+        debug:
+          msg: running PLAYBOOK TASK handler
+    
+      - name: run handler post
+        debug:
+          msg: running PLAYBOOK POST handler

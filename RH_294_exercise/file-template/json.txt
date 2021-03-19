@@ -1,0 +1,1 @@
+[{'name': 'configure SOE', 'hosts': 'all', 'remote_user': 'devops', 'become': True, 'vars': [{'system_owner': 'clyde@example.com'}], 'tasks': [{'name': 'configure /etc/motd', 'template': {'src': 'files/motd.j2', 'dest': '/etc/motd', 'owner': 'root', 'group': 'root', 'mode': 420}}]}]

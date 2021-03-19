@@ -1,0 +1,16 @@
+---
+  - name: demo for fail and assert 
+    hosts:  all
+    tasks:
+      - name: lets stat a file
+        stat:
+          path : /var/www/html/star.html
+        register: return
+
+      - name: fail if file exists
+        fail:
+        when: return.stat.exists
+
+      - name: 
+        debug:
+          var: return

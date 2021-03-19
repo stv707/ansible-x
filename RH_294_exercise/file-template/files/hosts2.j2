@@ -1,0 +1,11 @@
+{{ ansible_managed }}
+----------------------------------------------------------
+{% if class == 'prod' -%}
+#Production System 
+{%- elif class == 'dev' -%}
+#Development System
+{%- else -%}
+#Unknown Classification
+{%- endif %} 
+----------------------------------------------------------
+

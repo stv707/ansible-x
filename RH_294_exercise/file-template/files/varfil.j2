@@ -1,0 +1,11 @@
+{{ ansible_managed }}
+----------------------------------------------------------------------------
+The highest number is: {{ my_list | max }}
+The Lowest number is: {{ my_list | min }} 
+Selecting random number from list: {{ my_list | random }}
+Join all the value from the list with a dash: {{ my_list | join('-') }}
+-----------------------------------------------------------------------------
+
+string variable to upper case: {{ sys_name | upper }}
+string variable to capitalize: {{ sys_name | capitalize }}
+-----------------------------------------------------------------------------

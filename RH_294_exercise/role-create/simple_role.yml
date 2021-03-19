@@ -1,0 +1,5 @@
+---
+  - name: run Role
+    hosts: webservers
+    roles:
+      - apache

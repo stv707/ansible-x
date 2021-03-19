@@ -8,7 +8,7 @@
       fail:
         msg: "The {{ inventory_hostname }} did not meet minimum reqs."
       when: >
-        ansible_memtotal_mb < min_ram_mb or
+        ansible_memtotal_mb*1024*1024 < min_ram_megabytes*1000000 or
         ansible_distribution != "RedHat"
 
     #Install all Packages

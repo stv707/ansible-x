@@ -8,7 +8,7 @@
       vars:
         package: httpd
         service: httpd
-      when: ansible_facts['os_family'] == 'RedHat'
+      when: ansible_facts['os_family'] == 'fedora'
 
     - name: Import the firewall task file and set the variables
       import_tasks: tasks/firewall.yml

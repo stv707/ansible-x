@@ -1,0 +1,16 @@
+- hosts: all
+  become: false
+  gather_facts: true
+  vars:
+    desired_interface_name: ""
+
+  tasks:
+    - set_fact:
+        desired_interface_name: "{{ item }}"
+      when:  hostvars[inventory_hostname]['ansible_'~item]['ipv4']['address'] is not defined
+      with_items:
+        - "{{ ansible_interfaces }}"
+
+    - name: print result
+      debug:
+        var: desired_interface_name

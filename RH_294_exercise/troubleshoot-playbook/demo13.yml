@@ -1,0 +1,21 @@
+---
+  - name: demo for fail and assert 
+    hosts:  all
+    vars:
+      file: /var/www/html/star.html.aaaa
+    tasks:
+      - name: lets stat a file
+        stat:
+          path : "{{ file }}" 
+        register: return
+
+      - name: fail if file exists
+        assert:
+          that:
+            - not return.stat.exists
+          fail_msg: "File {{ file }} Exist !!!!" 
+          success_msg: "File {{ file }} is not there!!!!"
+
+      - name: 
+        debug:
+          var: return

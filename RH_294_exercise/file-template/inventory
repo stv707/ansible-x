@@ -1,19 +1,8 @@
 [webservers]
-servera.lab.example.com
+servera.lab.example.com class=prod
+serverb.lab.example.com class=prod
+serverc.lab.example.com class=dev
+serverd.lab.example.com class=dev
 
 [workstations]
 workstation.lab.example.com
-
-[web]
-serverc.lab.example.com
-serverd.lab.example.com
-
-[web_prod]
-servera.lab.example.com
-serverb.lab.example.com
-
-[prod:children]
-web
-web_prod
-
-

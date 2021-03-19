@@ -1,9 +1,8 @@
 ---
 - name: configure SOE
-  hosts: prod
+  hosts: all
   remote_user: devops
   become: true
-  serial: 4
   vars:
     - system_owner: clyde@example.com
   tasks:

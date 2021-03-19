@@ -1,0 +1,16 @@
+--- 
+  - name: debug demo
+    hosts: all 
+
+    tasks:
+      - name: Run UPtime
+        shell: /usr/bin/uptime
+        register: aaa
+
+      - name: display result
+        debug:
+          var: aaa
+
+      - name: display stdout and cmd 
+        debug:
+          msg: The OutPut is {{ aaa.stdout }} and the command is {{ aaa.cmd }}

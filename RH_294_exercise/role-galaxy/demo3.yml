@@ -1,0 +1,7 @@
+---
+  - name: use redis.dev role playbook
+    hosts: devservers
+
+    roles:
+      - { role: redis.dev, redis_port: 4545 } 
+

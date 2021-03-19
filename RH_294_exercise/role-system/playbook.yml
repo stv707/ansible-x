@@ -1,18 +1,11 @@
 ---
-- name: Testing Debug Module
-  hosts: servera.lab.example.com 
-  tasks:
-    - name: Debug 1 
-      debug:
-        msg: "This is a TEST MSG for Debug 1" 
+  - name: Running roles
+    hosts: servera.lab.example.com
+    vars:
+        timesync_ntp_servers:
+          - hostname: classroom.lab.example.com
+            iburst: yes
 
-    - name: Debug 2 
-      debug:
-        msg: "System servera has uuid {{ ansible_product_uuid }}" 
+    roles:
+    - rhel-system-roles.timesync
 
-    - name: Debug 3 with Shell command 
-      command: /usr/bin/uptime
-      register: shell_result
-      
-    - debug: 
-        var:  shell_result.stdout   
