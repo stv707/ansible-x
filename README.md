@@ -38,4 +38,4 @@ This repo contains 2 sub folders:
 - You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
 - the lab prefix command will not work on NON training machine (you don't need them because the folders RH_294_exercise contains all the practice that the lab prefix creates )
 
-Thank You : @banditbroz 
+Thank You : @Steven @smahalin@redhat.com
