@@ -8,4 +8,5 @@
 
     roles:
     - rhel-system-roles.timesync
+    - role.mysql
 
