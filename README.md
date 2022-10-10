@@ -37,5 +37,6 @@ This repo contains 2 sub folders:
 - DO NOT share ANY of the content of this repo on public domain. 
 - You need RH294 official student guide to use the practice ( which is downloadable when you attend the training )
 - the lab prefix command will not work on NON training machine (you don't need them because the folders RH_294_exercise contains all the practice that the lab prefix creates )
+- You can use ansible-workshop for more generic version of workshop if you never have chance to attend RH294
 
 Thank You : @Steven @smahalin@redhat.com
